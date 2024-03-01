@@ -1,0 +1,31 @@
+{
+    "configurations": [
+        {
+            "name": "main",
+            "compilerPath": "/usr/bin/gcc",
+            "defines": [
+                "DEBUG",
+                "_FILE_OFFSET_BITS=64",
+                "WXUSINGDLL",
+                "__WXGTK__"
+            ],
+            "compilerArgs": [
+                "-std=gnu++20"
+            ],
+            "includePath": [
+                "/usr/include/wx-3.0",
+                "/usr/lib/x86_64-linux-gnu/wx/include/gtk3-unicode-3.0",
+                "./include",
+                "./rc"
+            ],
+            "cppStandard": "${default}",
+            "intelliSenseMode":"linux-clang-x64",
+            "browse": {
+                "databaseFilename": "${workspaceFolder}/.vscode/browse.out",
+                "limitSymbolsToIncludedHeaders": false,
+                "path":["${workspaceFolder}"]
+            }
+		}
+	],
+    "version": 4
+}

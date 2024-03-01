@@ -1,10 +1,18 @@
 # wx-template-project
-これはwxWidgetの基本的なテンプレートサンプルです  
+これは`wxWidgets`(C++用クロスプラットフォームGUIライブラリ)の基本的なテンプレートサンプルです  
+`cmake`で`wxWidgets`をビルドする時のサンプルにもなっています   
 github画面の右端にある`use this template`ボタンを押すだけでwxWidgetのプロジェクトの雛形から起こすことが出来ます  
-
+  
 ubuntu 22.04の環境で動作確認済  
+  
+  
+wxWidgetsについてはこちら  
+https://www.wxwidgets.org/  
+https://github.com/wxWidgets/wxWidgets  
 
-## ビルド方法:
+
+
+## ビルド方法(ubuntu/linux):
 
 cmake とか wxWidgetのライブラリは必要なのでインストールします。
 ```
@@ -25,3 +33,6 @@ Flatpak版を使ったほうがいいと思います
 $ wget https://github.com/wxFormBuilder/wxFormBuilder/releases/download/v4.0.0/wxFormBuilder-4.0.0-x86_64.flatpak
 $ flatpak install ./wxFormBuilder-4.0.0-x86_64.flatpak
 ```
+
+## TODO:
+- Windowsでの例を入れる
