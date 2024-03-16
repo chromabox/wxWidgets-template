@@ -80,9 +80,9 @@ appFrame::appFrame()
 	m_statusBar = this->CreateStatusBar( 1, wxSTB_SIZEGRIP, wxID_ANY );
 
 	// イベントハンドラーの登録
-	Bind(wxEVT_MENU,&appFrame::OnFileMenu_FileOpen,this,wxID_FMENU_FOPEN);
-	Bind(wxEVT_MENU,&appFrame::OnFileMenu_Test,this,wxID_FMENU_TEST);
-	Bind(wxEVT_MENU,&appFrame::OnFileMenu_Exit,this,wxID_FMENU_EXIT);
+	Bind(wxEVT_MENU,&appFrame::OnFileMenu_FileOpen, this, wxID_FMENU_FOPEN);
+	Bind(wxEVT_MENU,&appFrame::OnFileMenu_Test, this, wxID_FMENU_TEST);
+	Bind(wxEVT_MENU,&appFrame::OnFileMenu_Exit, this, wxID_FMENU_EXIT);
 
 	Bind(wxEVT_CLOSE_WINDOW, &appFrame::OnClose, this);
 }
@@ -100,11 +100,11 @@ void appFrame::OnClose(wxCloseEvent& event)
 void appFrame::OnFileMenu_FileOpen( wxCommandEvent& event )
 {
 	wxLogMessage(L"select open");
-	wxString filename = wxLoadFileSelector("load file", wxEmptyString);
+	wxString filename = wxLoadFileSelector(L"load file", wxEmptyString);
 	if ( filename.empty() ){
 		wxLogMessage(L"select cancel");
 	}
-	wxLogMessage("ok %ls",filename);
+	wxLogMessage(L"ok %ls" ,filename);
 	wxMessageBox(filename);
 }
 
