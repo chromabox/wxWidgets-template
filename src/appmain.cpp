@@ -44,13 +44,13 @@ bool mainApp::OnInit()
 		return false;
 	}
 	// ロガー作成
-	auto *logger=new wxLogStream(&std::cout);
+	auto logger=new wxLogStream(&std::cout);
 	wxLog::SetActiveTarget(logger);
 
 	// wxImageを扱うときは必ず必要
 	wxInitAllImageHandlers();
 
-	appFrame* frame = new appFrame;
+	auto frame = new appFrame;
 	frame->Show();
 	// メッセージループ実行
 	return true;
@@ -78,6 +78,19 @@ appFrame::appFrame()
 	SetMenuBar(menuBar);
 
 	m_statusBar = this->CreateStatusBar( 1, wxSTB_SIZEGRIP, wxID_ANY );
+
+	auto framesizer = new wxBoxSizer( wxVERTICAL );
+	// アプリのパネル配置
+	auto panel = new wxPanel( this, wxID_ANY, wxDefaultPosition, wxDefaultSize, wxCLIP_CHILDREN|wxTAB_TRAVERSAL);
+	auto panelSizer = new wxBoxSizer( wxVERTICAL );
+	// TODO: ここにコントロールなどを追加します
+	{}
+	panel->SetSizer( panelSizer );
+	panel->Layout();
+	panelSizer->Fit(panel);
+	framesizer->Add(panel, wxSizerFlags(1).Expand());
+	SetSizer(framesizer);
+	Layout();
 
 	// イベントハンドラーの登録
 	Bind(wxEVT_MENU,&appFrame::OnFileMenu_FileOpen, this, wxID_FMENU_FOPEN);
