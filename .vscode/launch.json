@@ -5,7 +5,7 @@
             "name": "exec_testing",
             "type": "cppdbg",
             "request": "launch",
-            "program": "${workspaceFolder}/build/wx_my_template",
+            "program": "${workspaceFolder}/build/wxwidgets_sample",
             "args": [],
             "stopAtEntry": true,
             "cwd": "${fileDirname}",

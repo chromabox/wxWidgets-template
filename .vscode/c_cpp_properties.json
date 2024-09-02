@@ -13,13 +13,13 @@
                 "-std=gnu++20"
             ],
             "includePath": [
-                "/usr/include/wx-3.0",
-                "/usr/lib/x86_64-linux-gnu/wx/include/gtk3-unicode-3.0",
+                "/usr/include/wx-3.2",
+                "/usr/lib/x86_64-linux-gnu/wx/include/gtk3-unicode-3.2",
                 "./include",
                 "./rc"
             ],
             "cppStandard": "${default}",
-            "intelliSenseMode":"linux-clang-x64",
+            "intelliSenseMode":"linux-gcc-x64",
             "browse": {
                 "databaseFilename": "${workspaceFolder}/.vscode/browse.out",
                 "limitSymbolsToIncludedHeaders": false,

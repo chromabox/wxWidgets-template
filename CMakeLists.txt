@@ -6,8 +6,8 @@ set(DEFAULT_BUILD_TYPE "Release")
 set(CMAKE_C_FLAGS_DEBUG "-g3 -Og")
 set(CMAKE_C_FLAGS_RELEASE "-g -O2")
 
-# must be
-set(CMAKE_POLICY_DEFAULT_CMP0077 NEW)
+# 
+# set(CMAKE_POLICY_DEFAULT_CMP0077 NEW)
 
 
 project(wxwidgets_sample)
@@ -31,6 +31,6 @@ set(SRC_FILES
 add_executable(${PROJECT_NAME} WIN32 ${SRC_FILES})
 
 target_include_directories(${PROJECT_NAME} PUBLIC ${INC_DIRS})
-target_compile_features(${PROJECT_NAME} PUBLIC cxx_std_17)
+target_compile_features(${PROJECT_NAME} PUBLIC cxx_std_20)
 
 target_link_libraries(${PROJECT_NAME} PRIVATE ${wxWidgets_LIBRARIES} ${CMAKE_THREAD_LIBS_INIT})

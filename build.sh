@@ -36,8 +36,6 @@ clean_build()
     rm -rf build_release
 }
 
-check_and_create_dir models
-
 # オプション指定の振り分け
 if [ "${1}" = "--clean" ]; then
     clean_build

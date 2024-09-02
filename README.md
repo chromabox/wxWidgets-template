@@ -3,8 +3,8 @@
 `cmake`で`wxWidgets`をビルドする時のサンプルにもなっています   
 github画面の右端にある`use this template`ボタンを押すだけでwxWidgetsのプロジェクトの雛形から起こすことが出来ます  
   
-ubuntu 22.04の環境で動作確認済  
-  
+ubuntu 24.04.1の環境で動作確認済  
+(gcc 13.2.0, wxWidgets 3.2.4)  
   
 wxWidgetsについてはこちら  
 https://www.wxwidgets.org/  
