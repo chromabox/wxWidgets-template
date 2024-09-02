@@ -17,7 +17,7 @@ https://github.com/wxWidgets/wxWidgets
 cmake とか wxWidgetsの開発用ライブラリ(〜dev)は必要なのでインストールします。
 ```
 $ sudo apt install build-essential cmake
-$ sudo apt install libwxbase3.0-dev libwxgtk3.0-gtk3-dev libwxgtk-webview3.0-gtk3-dev libwxgtk-media3.0-gtk3-dev libwxsmithlib-dev libwxsvg-dev
+$ sudo apt install wx3.2-i18n libwxgtk3.2-dev libwxgtk-webview3.2-dev libwxgtk-media3.2-dev libwxsmithlib-dev libwxsvg-dev
 ```
 
 次に、github画面の右端にある`use this template`ボタンを押してプロジェクトを作ります。  
@@ -31,8 +31,8 @@ $ ./build.sh
 ubuntuではFlatpak版を使ったほうがいいと思います  
 Flatpak版のインストール方法は以下のようになります  
 ```
-$ wget https://github.com/wxFormBuilder/wxFormBuilder/releases/download/v4.0.0/wxFormBuilder-4.0.0-x86_64.flatpak
-$ flatpak install ./wxFormBuilder-4.0.0-x86_64.flatpak
+$ wget https://github.com/wxFormBuilder/wxFormBuilder/releases/download/v4.2.1/wxFormBuilder-4.2.1-x86_64.flatpak
+$ sudo flatpak install ./wxFormBuilder-4.2.1-x86_64.flatpak
 ```
 
 ## TODO:
